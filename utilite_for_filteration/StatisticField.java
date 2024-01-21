@@ -65,22 +65,44 @@ public class StatisticField {
     }
 
     public double giveMaxNumber () {
+        if (countFloatElements + countIntegerElements == 0){
+            return 0;
+        }
         return maxElement;
     }
 
     public double giveMinNumber () {
+        if (countFloatElements + countIntegerElements == 0){
+            return 0;
+        }
         return minElement;
     }
 
     public double giveSumm () {
+        if (countFloatElements + countIntegerElements == 0){
+            return 0;
+        }
         return summ;
     }
 
     public int giveMaxLength () {
+        if (countStringElements == 0){
+            return 0;
+        }
         return maxLength;
     }
 
     public int giveMinLength () {
+        if (countStringElements == 0){
+            return 0;
+        }
         return minLength;
+    }
+
+    public double giveMidlaneElement () {
+        if (countFloatElements + countIntegerElements == 0){
+            return 0;
+        }
+        return summ / (countFloatElements + countIntegerElements);
     }
 }
