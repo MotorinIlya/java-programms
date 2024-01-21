@@ -88,8 +88,7 @@ public class Programm {
             System.out.println("max element: " + statistic.giveMaxNumber());
             System.out.println("min element: " + statistic.giveMinNumber());
             System.out.println("summ elements: " + statistic.giveSumm());
-            double midlaneElement = statistic.giveSumm() / (statistic.giveCountFloat() + statistic.giveCountInteger());
-            System.out.println("midlane element: " + midlaneElement);
+            System.out.println("midlane element: " + statistic.giveMidlaneElement());
             System.out.println("count string elements: " + statistic.giveCountString());
             System.out.println("min length: " + statistic.giveMinLength());
             System.out.println("max length: " + statistic.giveMaxLength());
