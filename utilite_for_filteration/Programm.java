@@ -71,7 +71,14 @@ public class Programm {
 
         StatisticField statistic = new StatisticField();
         for (String s : files){
-            Parser.parseFile(s, statistic);
+            File file = new File(s);
+            if (file.exists()){
+                Parser.parseFile(s, statistic);
+            }
+            else{
+                System.out.println("the specified file does not exist");
+            }
+            
         }
 
         if (option_f == 1) {
